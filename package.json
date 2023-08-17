@@ -1,0 +1,26 @@
+{
+  "name": "blog-nuxt2",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "cookie-universal-nuxt": "^2.1.5",
+    "core-js": "^3.19.3",
+    "js-cookie": "^3.0.1",
+    "nuxt": "^2.15.8",
+    "vue": "^2.6.14",
+    "vue-server-renderer": "^2.6.14",
+    "vue-template-compiler": "^2.6.14",
+    "webpack": "^4.46.0"
+  },
+  "devDependencies": {
+    "sass": "^1.51.0",
+    "sass-loader": "^10.2.1"
+  }
+}
