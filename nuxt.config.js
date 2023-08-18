@@ -6,7 +6,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'blog-nuxt2',
+    title: 'test-quwi',
     htmlAttrs: {
       lang: 'en'
     },
@@ -34,8 +34,6 @@ export default {
   components: {
     dirs: [
       '~/components',
-      '~/components/system',
-      '~/components/UI',
     ]
   },
 
