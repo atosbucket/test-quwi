@@ -1,7 +1,5 @@
 export default function(context) {
-    // const token = localStorage.getItem("token");
-    // console.log("###################", token);
-    if(!context.store.getters.checkAuthUser) {
+    if(store.state.auth.loggedIn) {
         context.redirect('/login')
     }
 }

@@ -1,8 +1,10 @@
 <template>
-    <h3>index page</h3>
+    <h3>index page {{ loggedInUser ? JSON.stringify(loggedInUser) : "" }}</h3>
 </template>
 
 <script>
+import { mapGetters } from 'vuex'
+
 export default {
     components: {},
     layout: "default",
@@ -11,8 +13,9 @@ export default {
         };
     },
     computed: {
+        ...mapGetters(['loggedInUser']),
         getProjects() {
-        return this.$store.getters.getProjects;
+            return this.$store.getters.getProjects;
         },
     },
 };
