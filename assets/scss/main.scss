@@ -22,6 +22,10 @@ body {
     background-color: rgb(209 213 219);
 }
 
+.border {
+    border: 1px solid;
+}
+
 .border-b {
     border-bottom: 1px solid;
 }
@@ -47,6 +51,10 @@ body {
 
 .p-4 {
     padding: 1rem;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
 }
 
 .mb-4 {
@@ -106,6 +114,14 @@ body {
     padding-right: 1rem;
 }
 
+.text-bold {
+    font-weight: 700;
+}
+
+.flex-1 {
+    flex: 1;
+}
+
 .no-underline {
     text-decoration: none;
 }
@@ -121,12 +137,34 @@ body {
     height: 100vh;
 }
 
+.mt-4 {
+    margin-top: 1rem;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.rounded {
+    border-radius: 0.25rem;
+}
+
+.project-logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 40px;
+}
+
+.h-100px {
+    height: 100px;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
 @media screen and (max-width: 767px) {
     .container {
         width: 600px;
     }
-}
-
-.mt-4 {
-    margin-top: 1rem;
 }

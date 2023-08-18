@@ -26,8 +26,11 @@ export const mutations = {
         state.projects.push(project)
     },
     editProject(state, project) {
-        // const postIndex = state.postsLoaded.findIndex(p => p.id === editPost.id)
-        // state.postsLoaded[postIndex] = editPost
+        state.projects = state.projects.map(p => {
+            if(p.id == project.id)
+                return project;
+            return p;
+        });
     },
 }
 
@@ -56,4 +59,20 @@ export const actions = {
     async logout({ commit, state }){
         await this.$auth.logout();
     },
+    async getProjects({commit}){
+        const res = await this.$axios.get('projects-manage/index?filters[is_active]=1&sort=dta_create');
+        if(res.status == 200) {
+            commit("setProjects", res.data.projects);
+            return res.data.projects;
+        }
+    },
+    async updateProject({commit}, data) {
+        const res = await this.$axios.post(`projects-manage/update?id=${data.id}`, {
+            name: data.name
+        });
+        if(res.status == 200) {
+            commit("editProject", res.data.project);
+            return res.data.project;
+        }
+    }
 }
