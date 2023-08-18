@@ -1,5 +1,10 @@
 <template>
-    <h3>index page {{ loggedInUser ? JSON.stringify(loggedInUser) : "" }}</h3>
+    <div class="w-full">
+        <h3 class="text-center">Projects</h3>
+        <div class="w-full d-flex mt-4">
+            <div class=""></div>
+        </div>
+    </div>
 </template>
 
 <script>

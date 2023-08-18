@@ -121,14 +121,12 @@ body {
     height: 100vh;
 }
 
-@media screen and (min-width: 1400px) {
-    .container {
-        width: 1200px;
-    }
-}
-
 @media screen and (max-width: 767px) {
     .container {
         width: 600px;
     }
+}
+
+.mt-4 {
+    margin-top: 1rem;
 }
